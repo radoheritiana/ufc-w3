@@ -1,0 +1,224 @@
+:root{
+    --bg-color: #0E0E1A;
+    --white-color: #F9F1E7;
+    --yellow-color: #D5A97D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
+
+main {
+    background-image: url("../img/bg-top.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 6vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center h2 {
+    padding: 0 8vh;
+    letter-spacing: 1em;
+}
+
+.center nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.center nav ul li {
+    padding: 0 5vh 0 0;
+}
+.right-nav {
+    display: flex;
+    flex-direction: column;
+}
+.temp {
+    font-size: 36px;
+    font-weight: bold;
+}
+.temp-label {
+    font-size: 11px;
+}
+.search-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-nav img {
+    width: 2vh;
+    height: auto;
+}
+
+/** container **/
+.container {
+    border: 1px solid var(--white-color);
+    margin: 0 6vh 6vh 6vh;
+}
+
+section {
+    height: 100vh;
+}
+
+/* presentation */
+.presentation-text {
+    text-align: center;
+    padding: 20vh 0;
+
+}
+.presentation-text h3 {
+    font-size: 24px;
+    word-spacing: 1em;
+    font-weight: normal;
+}
+.presentation-text h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+.search {
+    margin-top: 10vh;
+    padding: 0 20vh;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-item {
+    border: 1px solid var(--white-color);
+    width: 25%;
+    height: 12vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.search-item label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 2vh;
+}
+
+.search-item select {
+    width: 90%;
+    padding: 1.5vh;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+}
+.search-button {
+    color: var(--yellow-color);
+    font-size: 22px;
+}
+.search-button:hover {
+    color: var(--white-color);
+    background-color: #D5A97D;
+}
+
+/** adventure **/
+.adventure {
+    
+}
+
+.adventure-title{
+    text-align: center;
+}
+
+.adventure-title h5 {
+    font-size: 18px;
+    color: var(--yellow-color);
+}
+.adventure-title h3 {
+    font-size: 38px;
+}
+.grid-3 {
+    padding: 16vh 16vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5vh;
+    text-align: center;
+}
+.grid-item-container {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.grid-3-item {
+    position: relative;
+    height: 60vh;
+}
+
+.bg-grid {
+    position: absolute;
+    z-index: -2;
+    top:0;
+    left: -250px;
+    width: auto;
+    height: 100%;
+}
+
+.grid-text-content {
+    padding: 10% 3vh;
+}
+.grid-text-content h6 {
+    font-size: 16px;
+}
+.grid-text-content h2 {
+    font-size: 36px;
+}
+
+.bottom-button {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    margin: auto;
+    padding: 2vh;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    border: none;
+    width: 40%;
+    font-weight: bold;
+    font-size: 16px;
+}
+.grid-top-img {
+    margin: auto;
+    overflow: hidden;
+    z-index: 100;
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(-75px);
+}
+.grid-top-img img {
+    width: 180px;
+    height: 160px;
+    transform: translateX(-10px);
+}
+
+
+
+
